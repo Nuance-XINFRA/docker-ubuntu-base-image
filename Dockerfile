@@ -11,5 +11,8 @@ RUN 		apt-get update && \
   			mkdir -p /etc/supervisor/conf.d
 
 ADD 		supervisord.conf /etc/supervisor/supervisord.conf
+ADD 		process_failed_to_restart_listener.py /etc/supervisor/process_failed_to_restart_listener.py
+
+RUN 		chmod +x /etc/supervisor/process_failed_to_restart_listener.py
 
 CMD 		supervisord -c /etc/supervisor/supervisord.conf
