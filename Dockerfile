@@ -1,5 +1,5 @@
-FROM 		ubuntu:14.04
-MAINTAINER 	Brice Argenson <brice.argenson@nuance.com>
+FROM 		ubuntu:16.10
+MAINTAINER      sspcm <mobility-sspcm@nuance.com>
 
 ENV 		DEBIAN_FRONTEND noninteractive
 
